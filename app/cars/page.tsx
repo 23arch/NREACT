@@ -6,21 +6,59 @@ type Props = {}
 
 
 
-const car: Car = {
-    name: "Super",
-    type: "VW",
-    color: "black",
-    motor: {
-        serialNumber: 1234,
-        hp: 200,
+const cars: Car[] = [
+    {
+        name: "Super",
+        type: "VW",
+        color: "black",
+        motor: {
+            serialNumber: 1234,
+            hp: 200,
+        },
     },
-};
-
+    {
+        name: "Speedster",
+        type: "Porsche",
+        color: "red",
+        motor: {
+            serialNumber: 5678,
+            hp: 450,
+        },
+    },
+    {
+        name: "Road King",
+        type: "Ford",
+        color: "blue",
+        motor: {
+            serialNumber: 9101,
+            hp: 350,
+        },
+    },
+    {
+        name: "EcoRide",
+        type: "Toyota",
+        color: "green",
+        motor: {
+            serialNumber: 1121,
+            hp: 150,
+        },
+    },
+    {
+        name: "Luxury Cruiser",
+        type: "Mercedes",
+        color: "white",
+        motor: {
+            serialNumber: 3141,
+            hp: 400,
+        },
+    },
+];
 
 export default function Cars({ }: Props) {
     return (
-        <div>Cars
-            <Card car={car} />
+        <div>
+            <h1>Cars</h1>
+            {cars.map((car: Car) => <Card car={car} />)}
         </div>
     )
 }
