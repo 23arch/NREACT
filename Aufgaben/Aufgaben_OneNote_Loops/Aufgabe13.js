@@ -3,8 +3,10 @@ let sum = 0;
 
 for (i = 1; i <= 30; i++) {
     if (i % 5 === 0) {
-        sum = i;
-        console.log(sum)
+        continue;
     }
+    sum += i;
 }
+
+console.log(sum)
 
