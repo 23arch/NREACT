@@ -6,4 +6,4 @@ for (i = 1; i <= 50; i++) {
         count += 1
     }
 }
-console.log(count)
+console.log(count) // Wenn man will, dass jeder Count ausgegeben wird, einfach count in die for-Schleife
