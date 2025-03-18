@@ -8,7 +8,12 @@ export default function Card({ car }: Props) {
     const [isActive, setIsActive] = useState(false); //Sowie eine Gedächtnisvariable in Java
     return (
         <div
-            className={'shadow p-4 hover:cursor-pointer ${isActive?"bg-amber-200":"bg-gray-200}'}
+            className={`mt-4 mx-2 shadow-xl p-6 hover:scale-[1.03] hover:cursor-pointer 
+            rounded-3xl transition-all duration-300 ease-in-out 
+            ${isActive ? "bg-gradient-to-br from-green-700 to-green-900" : "bg-red-600"} 
+            hover:from-blue-600 hover:to-blue-800 
+            text-white font-semibold tracking-wide md:grid-cols-4 grid-cols-2`}
+
             onClick={() => {
                 setIsActive(!isActive);
             }}>

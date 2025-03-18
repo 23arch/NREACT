@@ -6,7 +6,6 @@ import CarList from './CarList';
 type Props = {}
 
 
-
 const cars: Car[] = [
     {
         name: "Super",
@@ -57,8 +56,8 @@ const cars: Car[] = [
 
 export default function Cars({ }: Props) {
     return (
-        <div>
-            <h1>Cars</h1>
+        <div className="bg-yellow-200 min-h-screen">
+            <h1 className="text-center text-4xl font-bold p-4 text-amber-600">Willkommen zum Auto-Projekt!</h1>
             <CarList cars={cars} />
         </div>
     )
