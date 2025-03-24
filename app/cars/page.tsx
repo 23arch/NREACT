@@ -1,9 +1,8 @@
 import React from 'react'
-import Card from '../components/ui/cars/Card'
 import { Car } from '@/lib/types/types';
 import CarList from './CarList';
 
-type Props = {}
+
 
 
 const cars: Car[] = [
@@ -54,7 +53,7 @@ const cars: Car[] = [
     },
 ];
 
-export default function Cars({ }: Props) {
+export default function Cars() {
     return (
         <div className="bg-yellow-200 min-h-screen">
             <h1 className="text-center text-4xl font-bold p-4 text-amber-600">Willkommen zum Auto-Projekt!</h1>

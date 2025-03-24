@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 
-type Props = {}
 
-export default function Menu({ }: Props) {
+
+export default function Menu() {
     return (
         <div className="bg-yellow-300 shadow-md">
             <div className="flex justify-center p-4">
