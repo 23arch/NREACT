@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-export default function NotFound({ }: Props) {
+export default function NotFound() {
     return (
         <div>Website not found</div>
     )

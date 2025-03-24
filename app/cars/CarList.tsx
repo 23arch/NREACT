@@ -1,5 +1,4 @@
 import { Car } from '@/lib/types/types'
-import React from 'react'
 import Card from '../components/ui/cars/Card'
 
 type Props = { cars: Car[] }
