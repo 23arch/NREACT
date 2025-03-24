@@ -2,9 +2,6 @@ import React from 'react'
 import { Car } from '@/lib/types/types';
 import CarList from './CarList';
 
-
-
-
 const cars: Car[] = [
     {
         name: "Super",
